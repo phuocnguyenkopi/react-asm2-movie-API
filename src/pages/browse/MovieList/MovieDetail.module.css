@@ -1,0 +1,33 @@
+.movie-detail {
+  display: flex;
+  margin: 20px 60px;
+  gap: 5%;
+  .right {
+    width: 45%;
+    h2 {
+      color: white;
+      border-bottom: 2px solid white;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .left {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.summary {
+  p {
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: white;
+  }
+}
+.overview {
+  padding: 10px 0;
+  p {
+    color: #ccc;
+  }
+}

@@ -1,0 +1,45 @@
+.movies-list {
+  margin: 50px 20px;
+}
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+.scroll-content {
+  display: flex;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2e2e2e;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.item {
+  margin-left: 10px;
+  padding: 10px 0;
+  text-align: center;
+  width: 250px;
+  height: auto;
+  scroll-snap-align: start;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,22 @@
+.result-list {
+  margin: 20px 0;
+}
+.container {
+  display: grid;
+  /* grid-template-rows: auto auto; */
+  grid-template-columns: repeat(9, 1fr);
+  margin: 30px 20px;
+}
+
+.item {
+  padding: 5px;
+  text-align: center;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 500ms;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
